@@ -8,6 +8,8 @@
 #' @examples
 #' normQuantileCI(0.95, 0.90, 100)
 #' normQuantileCI(0.95, 0.99, 100)
+#' 50.1 - normQuantileCI(gamma=.975, pvalue=0.9, sample.size=5)*1.31
+#' 50.1 + normQuantileCI(gamma=.975, pvalue=0.1, sample.size=5)*1.31
 #' 
 #' @importFrom stats qt qnorm
 #' @useDynLib StatInt, .registration = TRUE
